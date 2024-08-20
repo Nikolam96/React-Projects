@@ -8,8 +8,8 @@ function App() {
   const [value, setValue] = useState(0);
 
   const fetchJobs = async () => {
-    const reponse = await fetch(url);
-    const newJobs = await reponse.json();
+    const response = await fetch(url);
+    const newJobs = await response.json();
     setJobs(newJobs);
     setLoading(false);
   };
